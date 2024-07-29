@@ -16,3 +16,6 @@ The aim of the project was build a spam detector using exisiting LLM model with 
 - Python script to train and use spam model with customised FLAN T5 - **training.py**
 - checkpoints - saved fine tune model
 - requirement - neccasary packages to run the project
+
+## Summary
+The goal of the project is to detect if an email is a spam or not. I began with data analysis and data pre-processing from the dataset. Following I have used NLP methods to prepare and clean our text data (tokenization, remove stop words, stemming). The preprocessed data then was converted into Hugging face DataDict format and tokenised using Flant T5 tokeniser. Third the fine tuning was performed on 0.71% of trainable parameters(1769472) resulting in 0.81 F1 score and overall improvement of .15 when comapared to Flant T5 base model.
